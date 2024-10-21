@@ -49,7 +49,7 @@ const GameScroller = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full h-screen flex items-center justify-center px-20  py-6">
+    <div className="w-full h-screen flex items-center justify-center px-20  py-6 max-sm:p-2 max-sm:h-[40vh]">
       <div className="relative w-full h-full flex justify-center items-center overflow-hidden rounded-3xl">
         {/* Image Container */}
         <div
@@ -69,15 +69,15 @@ const GameScroller = () => {
               }}
             >
               {/* Button Link */}
-              <div className="flex justify-center items-center h-full mt-48 ">
+              <div className="flex justify-center items-center h-full mt-48 max-sm:mt-24">
                 <a
                   href={item.buttonLink}
-                  className={`px-14 py-4 text-white text-3xl flex flex-row items-center justify-center gap-6 rounded-full font-mont  transition-colors shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] duration-300 ${item.buttonColor}`}
+                  className={`px-14 py-4 max-sm:py-2 max-sm:px-8 text-white text-3xl max-sm:text-xl flex flex-row items-center justify-center gap-6 max-sm:gap-3 rounded-full font-mont  transition-colors shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] duration-300 ${item.buttonColor}`}
                 >
                   {item.buttonText}
                   <FontAwesomeIcon
                     icon={faArrowRight}
-                    className="text-white text-5xl  "
+                    className="text-white text-5xl  max-sm:text-3xl"
                   />
                 </a>
               </div>
@@ -89,12 +89,12 @@ const GameScroller = () => {
 
         {/* Right Button */}
         <button
-          className="absolute right-4 z-10  rounded-xl py-8 px-4 bg-gray-800 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] flex justify-center items-center  hover:bg-gray-400"
+          className="absolute right-4 z-10 max-sm:py-4 max-sm:px-2 max-sm:rounded-lg rounded-xl py-8 px-4 bg-gray-800 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] flex justify-center items-center  hover:bg-gray-400"
           onClick={handleNext}
         >
           <FontAwesomeIcon
             icon={faArrowRight}
-            className="text-white text-3xl font-bold"
+            className="text-white text-3xl font-bold max-sm:text-2xl"
           />
         </button>
       </div>

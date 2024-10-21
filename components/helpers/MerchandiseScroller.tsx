@@ -70,7 +70,7 @@ const MerchandiseScroller = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full h-screen flex items-center justify-center px-40 py-6">
+    <div className="w-full h-screen flex items-center justify-center px-40 py-6 max-sm:p-2 max-sm:h-[40vh]">
       <div
         className={`relative w-full h-full flex justify-center items-center overflow-hidden transition-all duration-500 ease-in-out rounded-3xl`}
         style={{

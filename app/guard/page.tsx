@@ -12,18 +12,18 @@ const CustomScrollbar = ({
   currentSection: number;
 }) => {
   return (
-    <div className="fixed right-8 top-1/2 transform -translate-y-1/2 flex flex-col justify-between items-center z-10 h-[50vh]">
+    <div className="fixed right-8 max-sm:right-1 top-1/2 transform -translate-y-1/2 flex flex-col justify-between items-center z-10 h-[50vh]">
       {/* Scroll to Section 1 */}
       <button
         onClick={() => scrollToSection(0)}
-        className={`flex justify-center items-center mb-4 w-10 h-14 rounded-md bg-opacity-50 bg-gray-500 transition-all duration-300 hover:bg-violet-600 ${
+        className={`flex justify-center items-center mb-4 w-10 h-14 max-sm:w-5 max-sm:h-7 rounded-md bg-opacity-50 bg-gray-500 transition-all duration-300 hover:bg-violet-600 ${
           currentSection === 0 ? "opacity-50 pointer-events-none" : ""
         }`}
       >
-        <div className="w-0 h-0 border-b-[16px] border-b-white border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent"></div>
+        <div className="w-0 h-0 border-b-[16px] border-b-white border-l-[10px] max-sm:border-b-[8px] max-sm:border-l-[5px] max-sm:border-r-[5px] border-l-transparent border-r-[10px] border-r-transparent"></div>
       </button>
       {/* Scroll path background */}
-      <div className="h-full w-6 bg-gray-200 bg-opacity-30 rounded-full relative">
+      <div className="h-full w-6 max-sm:w-3 bg-gray-200 bg-opacity-30 rounded-full relative">
         <div
           className="absolute w-full rounded-full bg-violet-600 transition-all duration-500"
           style={{
@@ -36,11 +36,11 @@ const CustomScrollbar = ({
       {/* Scroll to Section 2 */}
       <button
         onClick={() => scrollToSection(1)}
-        className={`flex justify-center items-center mt-4 w-10 h-14 rounded-md bg-opacity-50 bg-gray-500 transition-all duration-300 hover:bg-violet-600 ${
+        className={`flex justify-center items-center mt-4 w-10 h-14 max-sm:w-5 max-sm:h-7 rounded-md bg-opacity-50 bg-gray-500 transition-all duration-300 hover:bg-violet-600 ${
           currentSection === 1 ? "opacity-50 pointer-events-none" : ""
         }`}
       >
-        <div className="w-0 h-0 border-t-[16px] border-t-white border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent"></div>
+        <div className="w-0 h-0 border-t-[16px] border-t-white border-l-[10px] max-sm:border-t-[8px] max-sm:border-l-[5px] max-sm:border-r-[5px] border-l-transparent border-r-[10px] border-r-transparent"></div>
       </button>
     </div>
   );
@@ -81,14 +81,14 @@ const Page = () => {
       {/* Section 1 */}
       <section
         ref={sectionRefs[0]}
-        className="h-screen w-full flex justify-center items-center relative z-10"
+        className="h-screen w-full flex justify-center items-center relative z-10 max-sm:mt-10"
       >
-        <div className="w-full h-full flex flex-col items-start text-white p-10">
+        <div className="w-full h-full flex flex-col items-start text-white p-10 max-sm:p-2">
           <div className="flex flex-col ">
-            <div className="font-baron text-[10vh] leading-tight">
+            <div className="font-baron text-[10vh] leading-tight max-sm:text-[10vh]">
               ALABAY GUARDIAN
             </div>
-            <div className="font-bebas text-[7vh] tracking-widest leading-tight text-violet-400">
+            <div className="font-bebas text-[7vh] max-sm:text-[5vh] tracking-widest max-sm:tracking-normal leading-tight text-violet-400">
               SHEPHERD OF THE STEPPES
             </div>
 
@@ -105,23 +105,23 @@ const Page = () => {
               PLAY
             </div>
           </div>
-          <div className="flex flex-col w-full items-start gap-2 mt-12">
+          <div className="flex flex-col w-full items-start gap-2  max-sm:gap-0 max-sm:mt-36 mt-20">
             <div className="flex flex-row font-mont text-xl gap-4">
               <div className="text-violet-400">GAME</div>
               <div className="text-white">PREVIEWS</div>
             </div>
-            <div className="flex flex-row justify-start gap-8 items-center">
+            <div className="flex flex-row justify-start gap-4 max-sm:overflow-x-scroll overflow-y-hidden items-center ">
               <img
                 src="/Games/Guard/guard1.png"
-                className="w-[18%] rounded-xl border-2 border-white"
+                className="h-[29vh] max-sm:h-[15vh] rounded-xl border-2 border-white"
               />
               <img
                 src="/Games/Guard/guard2.png"
-                className="w-[18%] rounded-xl border-2 border-white"
+                className="h-[29vh] max-sm:h-[15vh] rounded-xl border-2 border-white"
               />
               <img
                 src="/Games/Guard/guard3.png"
-                className="w-[18%] rounded-xl border-2 border-white"
+                className="h-[29vh] max-sm:h-[15vh] rounded-xl border-2 border-white"
               />
             </div>
           </div>
@@ -132,12 +132,12 @@ const Page = () => {
         ref={sectionRefs[1]}
         className="h-screen flex justify-center items-center relative z-10"
       >
-        <div className="w-full h-full flex flex-col items-start text-white p-10">
+        <div className="w-full h-full flex flex-col items-start text-white p-10 max-sm:p-2 max-sm:pr-6">
           <div className="flex flex-col text-md leading-tight">
-            <div className="font-baron text-[10vh] leading-tight">
+            <div className="font-baron text-[10vh] max-sm:text-[7vh] leading-tight">
               ALABAY GUARDIAN
             </div>
-            <div className="font-bebas text-[7vh] tracking-widest leading-tight text-violet-400">
+            <div className="font-bebas text-[7vh] max-sm:text-[4vh] tracking-widest leading-tight text-violet-400">
               SHEPHERD OF THE STEPPES
             </div>
 
