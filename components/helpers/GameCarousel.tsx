@@ -36,10 +36,6 @@ const GameScroller = () => {
     updateIndex(currentIndex + 1);
   };
 
-  const handlePrev = () => {
-    updateIndex(currentIndex - 1);
-  };
-
   // Auto-scroll functionality
   useEffect(() => {
     if (timeoutRef.current) {

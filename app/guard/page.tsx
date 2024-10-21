@@ -152,15 +152,15 @@ const Page = () => {
               <span className="text-violet-400">ancient ruins</span>.
             </p>
             <p className="font-mont pt-6  tracking-widest">
-              Use the Alabay's{" "}
+              Use the Alabay&apos;s{" "}
               <span className="text-violet-400">abilities</span> to solve{" "}
               <span className="text-violet-400">puzzles</span> that involve
               moving objects, activating mechanisms, or finding hidden clues.
             </p>
             <p className="font-mont pt-6  tracking-widest">
-              Discover relics that tell the story of the Alabay’s ancestors,
-              each piece contributing to a larger narrative about the breed's
-              role in ancient history. 
+              Discover relics that tell the story of the Alabay&apos;s
+              ancestors, each piece contributing to a larger narrative about the
+              breed&apos;s role in ancient history. 
             </p>
             <p className="font-mont pt-6  tracking-widest">
               Unlock new skills and abilities for the Alabay, enhancing its
@@ -173,7 +173,7 @@ const Page = () => {
               complex mazes or complete puzzles within a time limit.  <br />  -
               <span className="text-violet-400">Exploration Mastery</span>: A
               mode that rewards players for fully exploring every nook and
-              cranny of the game’s world, uncovering all secrets
+              cranny of the games world, uncovering all secrets
             </p>
             <div className="flex flex-row gap-10 mt-6">
               <div className=" mt-4 w-fit text-sm p-2 font-bold tracking-wide text-zinc-800 flex flex-row items-center justify-center gap-6 rounded-full transition-colors shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] duration-300 bg-white pr-10">

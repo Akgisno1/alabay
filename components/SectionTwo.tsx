@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import Carousel from "./ui/carousel";
 
-const images = ["/41.png", "/42.png", "/43.png", "/44.png"];
-
 const SectionTwo = () => {
   const [active, setActive] = useState("all");
 
